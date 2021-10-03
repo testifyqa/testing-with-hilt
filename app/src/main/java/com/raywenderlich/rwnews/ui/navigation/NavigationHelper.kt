@@ -5,6 +5,5 @@ import androidx.fragment.app.Fragment
 
 /** Abstraction for the object that provides navigation utility */
 interface NavigationHelper {
-
   fun replace(@IdRes anchorId: Int, fragment: Fragment, backStack: String? = null)
 }
