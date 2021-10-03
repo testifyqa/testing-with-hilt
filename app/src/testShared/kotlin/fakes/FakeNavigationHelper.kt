@@ -10,6 +10,7 @@ class FakeNavigationHelper : NavigationHelper {
     val replaceRequests = mutableListOf<NavigationInput>()
 
     override fun replace(anchorId: Int, fragment: Fragment, backStack: String?) {
-        replaceRequests.add(NavigationInput(anchorId, fragment, backStack))
+        val test = NavigationInput(anchorId, fragment, backStack)
+        replaceRequests.add(test)
     }
 }
